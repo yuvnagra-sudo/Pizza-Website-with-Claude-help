@@ -1,0 +1,70 @@
+{
+  "query": "SELECT id, name, category, available FROM menuItems WHERE category = 'pizza' LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3sMjW2Cb55bMNhN.ceec5d85dae0 --database D8hwM9LPzYVV8vtRDKX9uk --execute SELECT id, name, category, available FROM menuItems WHERE category = 'pizza' LIMIT 10;",
+  "rows": [
+    {
+      "id": "1",
+      "name": "Walk-in Special",
+      "category": "pizza",
+      "available": "0"
+    },
+    {
+      "id": "99",
+      "name": "Cheese",
+      "category": "pizza",
+      "available": "1"
+    },
+    {
+      "id": "100",
+      "name": "Two Topper",
+      "category": "pizza",
+      "available": "1"
+    },
+    {
+      "id": "101",
+      "name": "Hawaiian",
+      "category": "pizza",
+      "available": "1"
+    },
+    {
+      "id": "102",
+      "name": "Three Topper",
+      "category": "pizza",
+      "available": "1"
+    },
+    {
+      "id": "103",
+      "name": "Dill Pickle",
+      "category": "pizza",
+      "available": "1"
+    },
+    {
+      "id": "104",
+      "name": "BBQ Chicken",
+      "category": "pizza",
+      "available": "1"
+    },
+    {
+      "id": "105",
+      "name": "BBQ Chicken with Bacon",
+      "category": "pizza",
+      "available": "1"
+    },
+    {
+      "id": "106",
+      "name": "Chicken Deluxe",
+      "category": "pizza",
+      "available": "1"
+    },
+    {
+      "id": "107",
+      "name": "Butter Chicken",
+      "category": "pizza",
+      "available": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tcategory\tavailable\n1\tWalk-in Special\tpizza\t0\n99\tCheese\tpizza\t1\n100\tTwo Topper\tpizza\t1\n101\tHawaiian\tpizza\t1\n102\tThree Topper\tpizza\t1\n103\tDill Pickle\tpizza\t1\n104\tBBQ Chicken\tpizza\t1\n105\tBBQ Chicken with Bacon\tpizza\t1\n106\tChicken Deluxe\tpizza\t1\n107\tButter Chicken\tpizza\t1\n",
+  "stderr": "",
+  "execution_time_ms": 1581
+}

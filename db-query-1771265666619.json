@@ -1,0 +1,35 @@
+{
+  "query": "SELECT name, available, category FROM menuItems WHERE category = 'pizza' LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3sMjW2Cb55bMNhN.ceec5d85dae0 --database D8hwM9LPzYVV8vtRDKX9uk --execute SELECT name, available, category FROM menuItems WHERE category = 'pizza' LIMIT 5;",
+  "rows": [
+    {
+      "name": "Walk-in Special",
+      "available": "1",
+      "category": "pizza"
+    },
+    {
+      "name": "Cheese",
+      "available": "1",
+      "category": "pizza"
+    },
+    {
+      "name": "Two Topper",
+      "available": "1",
+      "category": "pizza"
+    },
+    {
+      "name": "Hawaiian",
+      "available": "1",
+      "category": "pizza"
+    },
+    {
+      "name": "Three Topper",
+      "available": "1",
+      "category": "pizza"
+    }
+  ],
+  "messages": [],
+  "stdout": "name\tavailable\tcategory\nWalk-in Special\t1\tpizza\nCheese\t1\tpizza\nTwo Topper\t1\tpizza\nHawaiian\t1\tpizza\nThree Topper\t1\tpizza\n",
+  "stderr": "",
+  "execution_time_ms": 1593
+}

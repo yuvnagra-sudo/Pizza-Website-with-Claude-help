@@ -1,0 +1,535 @@
+{
+  "query": "SELECT id, name, category, available, sortOrder FROM menuItems ORDER BY category, name;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3sMjW2Cb55bMNhN.ceec5d85dae0 --database D8hwM9LPzYVV8vtRDKX9uk --execute SELECT id, name, category, available, sortOrder FROM menuItems ORDER BY category, name;",
+  "rows": [
+    {
+      "id": "123",
+      "name": "Add-on Toppings",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "104",
+      "name": "BBQ Chicken",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "147",
+      "name": "BBQ Chicken (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "105",
+      "name": "BBQ Chicken with Bacon",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "148",
+      "name": "BBQ Chicken with Bacon (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "109",
+      "name": "Buffalo Chicken",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "152",
+      "name": "Buffalo Chicken (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "107",
+      "name": "Butter Chicken",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "150",
+      "name": "Butter Chicken (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "114",
+      "name": "Caesar's Pizza",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "119",
+      "name": "Canadian Classic",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "162",
+      "name": "Canadian Classic (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "118",
+      "name": "Canadian Style",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "161",
+      "name": "Canadian Style (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "157",
+      "name": "Ceaser's Pizza (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "99",
+      "name": "Cheese",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "1"
+    },
+    {
+      "id": "142",
+      "name": "Cheese (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "106",
+      "name": "Chicken Deluxe",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "149",
+      "name": "Chicken Deluxe (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "110",
+      "name": "Chipotle Chicken",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "153",
+      "name": "Chipotle Chicken (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "103",
+      "name": "Dill Pickle",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "146",
+      "name": "Dill Pickle (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "122",
+      "name": "Donair",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "165",
+      "name": "Donair (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "117",
+      "name": "Greek Style",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "160",
+      "name": "Greek Style (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "101",
+      "name": "Hawaiian",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "2"
+    },
+    {
+      "id": "144",
+      "name": "Hawaiian (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "108",
+      "name": "Hot & Spicy Chicken",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "151",
+      "name": "Hot & Spicy Chicken (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "115",
+      "name": "Johnny's Special",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "158",
+      "name": "Johnny's Special (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "113",
+      "name": "Meat Supreme",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "156",
+      "name": "Meat Supreme (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "30001",
+      "name": "Pepperoni",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "3"
+    },
+    {
+      "id": "120",
+      "name": "Royal Deluxe",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "163",
+      "name": "Royal Deluxe (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "121",
+      "name": "Spice Lovers",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "164",
+      "name": "Spice Lovers (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "112",
+      "name": "Super Loaded",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "155",
+      "name": "Super Loaded (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "111",
+      "name": "Teriyaki Chicken",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "154",
+      "name": "Teriyaki Chicken (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "60001",
+      "name": "Test Pizza",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "0"
+    },
+    {
+      "id": "102",
+      "name": "Three Topper",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "145",
+      "name": "Three Topper (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "100",
+      "name": "Two Topper",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "4"
+    },
+    {
+      "id": "143",
+      "name": "Two Topper (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "116",
+      "name": "Vegetarian",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "159",
+      "name": "Vegetarian (Gluten-Free)",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "10"
+    },
+    {
+      "id": "1",
+      "name": "Walk-in Special",
+      "category": "pizza",
+      "available": "1",
+      "sortOrder": "0"
+    },
+    {
+      "id": "124",
+      "name": "Bone-In Wings",
+      "category": "wings",
+      "available": "0",
+      "sortOrder": "0"
+    },
+    {
+      "id": "125",
+      "name": "Boneless Wings",
+      "category": "wings",
+      "available": "1",
+      "sortOrder": "1"
+    },
+    {
+      "id": "166",
+      "name": "Gluten-Free Wings",
+      "category": "wings",
+      "available": "1",
+      "sortOrder": "100"
+    },
+    {
+      "id": "129",
+      "name": "Bread Sticks",
+      "category": "sides",
+      "available": "1",
+      "sortOrder": "1"
+    },
+    {
+      "id": "126",
+      "name": "Caesar Salad",
+      "category": "sides",
+      "available": "1",
+      "sortOrder": "0"
+    },
+    {
+      "id": "136",
+      "name": "Cheddar Chipotle Sauce",
+      "category": "sides",
+      "available": "1",
+      "sortOrder": "3"
+    },
+    {
+      "id": "169",
+      "name": "Cheddar Chipotle Sauce (GF)",
+      "category": "sides",
+      "available": "1",
+      "sortOrder": "100"
+    },
+    {
+      "id": "130",
+      "name": "Cheesy Sticks",
+      "category": "sides",
+      "available": "1",
+      "sortOrder": "1"
+    },
+    {
+      "id": "127",
+      "name": "Chicken Caesar Salad",
+      "category": "sides",
+      "available": "1",
+      "sortOrder": "0"
+    },
+    {
+      "id": "128",
+      "name": "Chicken Fillets",
+      "category": "sides",
+      "available": "1",
+      "sortOrder": "1"
+    },
+    {
+      "id": "137",
+      "name": "Creamy Garlic Sauce",
+      "category": "sides",
+      "available": "1",
+      "sortOrder": "3"
+    },
+    {
+      "id": "170",
+      "name": "Creamy Garlic Sauce (GF)",
+      "category": "sides",
+      "available": "1",
+      "sortOrder": "100"
+    },
+    {
+      "id": "131",
+      "name": "Curly Fries",
+      "category": "sides",
+      "available": "1",
+      "sortOrder": "2"
+    },
+    {
+      "id": "135",
+      "name": "Marinara Sauce",
+      "category": "sides",
+      "available": "1",
+      "sortOrder": "3"
+    },
+    {
+      "id": "168",
+      "name": "Marinera Sauce (GF)",
+      "category": "sides",
+      "available": "1",
+      "sortOrder": "100"
+    },
+    {
+      "id": "132",
+      "name": "Onion Rings",
+      "category": "sides",
+      "available": "1",
+      "sortOrder": "2"
+    },
+    {
+      "id": "133",
+      "name": "Potato Wedges",
+      "category": "sides",
+      "available": "1",
+      "sortOrder": "2"
+    },
+    {
+      "id": "134",
+      "name": "Ranch Sauce",
+      "category": "sides",
+      "available": "1",
+      "sortOrder": "3"
+    },
+    {
+      "id": "167",
+      "name": "Ranch Sauce (GF)",
+      "category": "sides",
+      "available": "1",
+      "sortOrder": "100"
+    },
+    {
+      "id": "140",
+      "name": "Drinks - 2 Litre Bottles",
+      "category": "drinks",
+      "available": "1",
+      "sortOrder": "0"
+    },
+    {
+      "id": "141",
+      "name": "Drinks - 6-pack of Cans",
+      "category": "drinks",
+      "available": "1",
+      "sortOrder": "0"
+    },
+    {
+      "id": "138",
+      "name": "Drinks - Cans",
+      "category": "drinks",
+      "available": "1",
+      "sortOrder": "0"
+    },
+    {
+      "id": "139",
+      "name": "Drinks - Large Cans",
+      "category": "drinks",
+      "available": "1",
+      "sortOrder": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tcategory\tavailable\tsortOrder\n123\tAdd-on Toppings\tpizza\t1\t10\n104\tBBQ Chicken\tpizza\t1\t10\n147\tBBQ Chicken (Gluten-Free)\tpizza\t1\t10\n105\tBBQ Chicken with Bacon\tpizza\t1\t10\n148\tBBQ Chicken with Bacon (Gluten-Free)\tpizza\t1\t10\n109\tBuffalo Chicken\tpizza\t1\t10\n152\tBuffalo Chicken (Gluten-Free)\tpizza\t1\t10\n107\tButter Chicken\tpizza\t1\t10\n150\tButter Chicken (Gluten-Free)\tpizza\t1\t10\n114\tCaesar's Pizza\tpizza\t1\t10\n119\tCanadian Classic\tpizza\t1\t10\n162\tCanadian Classic (Gluten-Free)\tpizza\t1\t10\n118\tCanadian Style\tpizza\t1\t10\n161\tCanadian Style (Gluten-Free)\tpizza\t1\t10\n157\tCeaser's Pizza (Gluten-Free)\tpizza\t1\t10\n99\tCheese\tpizza\t1\t1\n142\tCheese (Gluten-Free)\tpizza\t1\t10\n106\tChicken Deluxe\tpizza\t1\t10\n149\tChicken Deluxe (Gluten-Free)\tpizza\t1\t10\n110\tChipotle Chicken\tpizza\t1\t10\n153\tChipotle Chicken (Gluten-Free)\tpizza\t1\t10\n103\tDill Pickle\tpizza\t1\t10\n146\tDill Pickle (Gluten-Free)\tpizza\t1\t10\n122\tDonair\tpizza\t1\t10\n165\tDonair (Gluten-Free)\tpizza\t1\t10\n117\tGreek Style\tpizza\t1\t10\n160\tGreek Style (Gluten-Free)\tpizza\t1\t10\n101\tHawaiian\tpizza\t1\t2\n144\tHawaiian (Gluten-Free)\tpizza\t1\t10\n108\tHot & Spicy Chicken\tpizza\t1\t10\n151\tHot & Spicy Chicken (Gluten-Free)\tpizza\t1\t10\n115\tJohnny's Special\tpizza\t1\t10\n158\tJohnny's Special (Gluten-Free)\tpizza\t1\t10\n113\tMeat Supreme\tpizza\t1\t10\n156\tMeat Supreme (Gluten-Free)\tpizza\t1\t10\n30001\tPepperoni\tpizza\t1\t3\n120\tRoyal Deluxe\tpizza\t1\t10\n163\tRoyal Deluxe (Gluten-Free)\tpizza\t1\t10\n121\tSpice Lovers\tpizza\t1\t10\n164\tSpice Lovers (Gluten-Free)\tpizza\t1\t10\n112\tSuper Loaded\tpizza\t1\t10\n155\tSuper Loaded (Gluten-Free)\tpizza\t1\t10\n111\tTeriyaki Chicken\tpizza\t1\t10\n154\tTeriyaki Chicken (Gluten-Free)\tpizza\t1\t10\n60001\tTest Pizza\tpizza\t1\t0\n102\tThree Topper\tpizza\t1\t10\n145\tThree Topper (Gluten-Free)\tpizza\t1\t10\n100\tTwo Topper\tpizza\t1\t4\n143\tTwo Topper (Gluten-Free)\tpizza\t1\t10\n116\tVegetarian\tpizza\t1\t10\n159\tVegetarian (Gluten-Free)\tpizza\t1\t10\n1\tWalk-in Special\tpizza\t1\t0\n124\tBone-In Wings\twings\t0\t0\n125\tBoneless Wings\twings\t1\t1\n166\tGluten-Free Wings\twings\t1\t100\n129\tBread Sticks\tsides\t1\t1\n126\tCaesar Salad\tsides\t1\t0\n136\tCheddar Chipotle Sauce\tsides\t1\t3\n169\tCheddar Chipotle Sauce (GF)\tsides\t1\t100\n130\tCheesy Sticks\tsides\t1\t1\n127\tChicken Caesar Salad\tsides\t1\t0\n128\tChicken Fillets\tsides\t1\t1\n137\tCreamy Garlic Sauce\tsides\t1\t3\n170\tCreamy Garlic Sauce (GF)\tsides\t1\t100\n131\tCurly Fries\tsides\t1\t2\n135\tMarinara Sauce\tsides\t1\t3\n168\tMarinera Sauce (GF)\tsides\t1\t100\n132\tOnion Rings\tsides\t1\t2\n133\tPotato Wedges\tsides\t1\t2\n134\tRanch Sauce\tsides\t1\t3\n167\tRanch Sauce (GF)\tsides\t1\t100\n140\tDrinks - 2 Litre Bottles\tdrinks\t1\t0\n141\tDrinks - 6-pack of Cans\tdrinks\t1\t0\n138\tDrinks - Cans\tdrinks\t1\t0\n139\tDrinks - Large Cans\tdrinks\t1\t0\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

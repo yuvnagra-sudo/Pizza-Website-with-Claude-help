@@ -1,0 +1,14 @@
+{
+  "query": "SELECT COUNT(*) as total_pizzas, SUM(CASE WHEN available = 1 THEN 1 ELSE 0 END) as available_pizzas FROM menuItems WHERE category = 'pizza';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3sMjW2Cb55bMNhN.ceec5d85dae0 --database D8hwM9LPzYVV8vtRDKX9uk --execute SELECT COUNT(*) as total_pizzas, SUM(CASE WHEN available = 1 THEN 1 ELSE 0 END) as available_pizzas FROM menuItems WHERE category = 'pizza';",
+  "rows": [
+    {
+      "total_pizzas": "52",
+      "available_pizzas": "51"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_pizzas\tavailable_pizzas\n52\t51\n",
+  "stderr": "",
+  "execution_time_ms": 1534
+}

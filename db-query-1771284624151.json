@@ -1,0 +1,970 @@
+{
+  "query": "SELECT TABLE_NAME, COLUMN_NAME, COLUMN_TYPE, IS_NULLABLE, COLUMN_KEY, COLUMN_DEFAULT FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = DATABASE() ORDER BY TABLE_NAME, ORDINAL_POSITION;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3sMjW2Cb55bMNhN.ceec5d85dae0 --database D8hwM9LPzYVV8vtRDKX9uk --execute SELECT TABLE_NAME, COLUMN_NAME, COLUMN_TYPE, IS_NULLABLE, COLUMN_KEY, COLUMN_DEFAULT FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = DATABASE() ORDER BY TABLE_NAME, ORDINAL_POSITION;",
+  "rows": [
+    {
+      "TABLE_NAME": "__drizzle_migrations",
+      "COLUMN_NAME": "id",
+      "COLUMN_TYPE": "bigint(20) unsigned",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "PRI",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "__drizzle_migrations",
+      "COLUMN_NAME": "hash",
+      "COLUMN_TYPE": "text",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "__drizzle_migrations",
+      "COLUMN_NAME": "created_at",
+      "COLUMN_TYPE": "bigint(20)",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "cartItemCustomizations",
+      "COLUMN_NAME": "id",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "PRI",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "cartItemCustomizations",
+      "COLUMN_NAME": "cartItemId",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "cartItemCustomizations",
+      "COLUMN_NAME": "modificationType",
+      "COLUMN_TYPE": "enum('add','remove','replace')",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "cartItemCustomizations",
+      "COLUMN_NAME": "toppingId",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "cartItemCustomizations",
+      "COLUMN_NAME": "replacedToppingId",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "cartItemCustomizations",
+      "COLUMN_NAME": "halfPizza",
+      "COLUMN_TYPE": "enum('whole','left','right')",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "whole"
+    },
+    {
+      "TABLE_NAME": "cartItemCustomizations",
+      "COLUMN_NAME": "additionalCharge",
+      "COLUMN_TYPE": "decimal(10,2)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "0.00"
+    },
+    {
+      "TABLE_NAME": "cartItemCustomizations",
+      "COLUMN_NAME": "createdAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "cartItems",
+      "COLUMN_NAME": "id",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "PRI",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "cartItems",
+      "COLUMN_NAME": "userId",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "MUL",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "cartItems",
+      "COLUMN_NAME": "itemType",
+      "COLUMN_TYPE": "varchar(20)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "pizza"
+    },
+    {
+      "TABLE_NAME": "cartItems",
+      "COLUMN_NAME": "menuItemId",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "MUL",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "cartItems",
+      "COLUMN_NAME": "size",
+      "COLUMN_TYPE": "varchar(50)",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "cartItems",
+      "COLUMN_NAME": "quantity",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "1"
+    },
+    {
+      "TABLE_NAME": "cartItems",
+      "COLUMN_NAME": "price",
+      "COLUMN_TYPE": "decimal(10,2)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "cartItems",
+      "COLUMN_NAME": "notes",
+      "COLUMN_TYPE": "text",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "cartItems",
+      "COLUMN_NAME": "createdAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "cartItems",
+      "COLUMN_NAME": "updatedAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "cartItems",
+      "COLUMN_NAME": "customizations",
+      "COLUMN_TYPE": "text",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "customerReviews",
+      "COLUMN_NAME": "id",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "PRI",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "customerReviews",
+      "COLUMN_NAME": "customerName",
+      "COLUMN_TYPE": "varchar(100)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "customerReviews",
+      "COLUMN_NAME": "email",
+      "COLUMN_TYPE": "varchar(320)",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "customerReviews",
+      "COLUMN_NAME": "rating",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "customerReviews",
+      "COLUMN_NAME": "reviewText",
+      "COLUMN_TYPE": "text",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "customerReviews",
+      "COLUMN_NAME": "approved",
+      "COLUMN_TYPE": "tinyint(1)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "0"
+    },
+    {
+      "TABLE_NAME": "customerReviews",
+      "COLUMN_NAME": "featured",
+      "COLUMN_TYPE": "tinyint(1)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "0"
+    },
+    {
+      "TABLE_NAME": "customerReviews",
+      "COLUMN_NAME": "createdAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "customerReviews",
+      "COLUMN_NAME": "approvedAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "customerReviews",
+      "COLUMN_NAME": "approvedBy",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "menuItemPrices",
+      "COLUMN_NAME": "id",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "PRI",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "menuItemPrices",
+      "COLUMN_NAME": "menuItemId",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "MUL",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "menuItemPrices",
+      "COLUMN_NAME": "size",
+      "COLUMN_TYPE": "varchar(50)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "menuItemPrices",
+      "COLUMN_NAME": "price",
+      "COLUMN_TYPE": "decimal(10,2)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "menuItemPrices",
+      "COLUMN_NAME": "createdAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "menuItemPrices",
+      "COLUMN_NAME": "updatedAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "menuItems",
+      "COLUMN_NAME": "id",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "PRI",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "menuItems",
+      "COLUMN_NAME": "name",
+      "COLUMN_TYPE": "varchar(100)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "menuItems",
+      "COLUMN_NAME": "description",
+      "COLUMN_TYPE": "text",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "menuItems",
+      "COLUMN_NAME": "category",
+      "COLUMN_TYPE": "enum('pizza','wings','sides','drinks')",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "MUL",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "menuItems",
+      "COLUMN_NAME": "imageUrl",
+      "COLUMN_TYPE": "text",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "menuItems",
+      "COLUMN_NAME": "available",
+      "COLUMN_TYPE": "tinyint(1)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "MUL",
+      "COLUMN_DEFAULT": "1"
+    },
+    {
+      "TABLE_NAME": "menuItems",
+      "COLUMN_NAME": "sortOrder",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "0"
+    },
+    {
+      "TABLE_NAME": "menuItems",
+      "COLUMN_NAME": "createdAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "menuItems",
+      "COLUMN_NAME": "updatedAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "orderItems",
+      "COLUMN_NAME": "id",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "PRI",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orderItems",
+      "COLUMN_NAME": "orderId",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "MUL",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orderItems",
+      "COLUMN_NAME": "menuItemId",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "MUL",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orderItems",
+      "COLUMN_NAME": "menuItemName",
+      "COLUMN_TYPE": "varchar(100)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orderItems",
+      "COLUMN_NAME": "size",
+      "COLUMN_TYPE": "varchar(50)",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orderItems",
+      "COLUMN_NAME": "quantity",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orderItems",
+      "COLUMN_NAME": "price",
+      "COLUMN_TYPE": "decimal(10,2)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orderItems",
+      "COLUMN_NAME": "notes",
+      "COLUMN_TYPE": "text",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orderItems",
+      "COLUMN_NAME": "createdAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "orderItems",
+      "COLUMN_NAME": "customizations",
+      "COLUMN_TYPE": "text",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "id",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "PRI",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "userId",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "MUL",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "status",
+      "COLUMN_TYPE": "enum('pending','preparing','out_for_delivery','completed','cancelled')",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "MUL",
+      "COLUMN_DEFAULT": "pending"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "deliveryAddress",
+      "COLUMN_TYPE": "text",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "phoneNumber",
+      "COLUMN_TYPE": "varchar(20)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "orderNotes",
+      "COLUMN_TYPE": "text",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "subtotal",
+      "COLUMN_TYPE": "decimal(10,2)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "tax",
+      "COLUMN_TYPE": "decimal(10,2)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "total",
+      "COLUMN_TYPE": "decimal(10,2)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "createdAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "MUL",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "updatedAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "orderType",
+      "COLUMN_TYPE": "enum('pickup','delivery')",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "delivery"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "customerName",
+      "COLUMN_TYPE": "varchar(100)",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "email",
+      "COLUMN_TYPE": "varchar(320)",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "additionalInfo",
+      "COLUMN_TYPE": "text",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "paymentMethod",
+      "COLUMN_TYPE": "enum('debit','credit_visa','credit_mastercard','cash','etransfer')",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "scheduledPickupTime",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "orders",
+      "COLUMN_NAME": "statusUpdatedAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "pizzaToppings",
+      "COLUMN_NAME": "id",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "PRI",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "pizzaToppings",
+      "COLUMN_NAME": "menuItemId",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "pizzaToppings",
+      "COLUMN_NAME": "toppingId",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "pizzaToppings",
+      "COLUMN_NAME": "isDefault",
+      "COLUMN_TYPE": "tinyint(1)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "1"
+    },
+    {
+      "TABLE_NAME": "pizzaToppings",
+      "COLUMN_NAME": "createdAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "toppings",
+      "COLUMN_NAME": "id",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "PRI",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "toppings",
+      "COLUMN_NAME": "name",
+      "COLUMN_TYPE": "varchar(100)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "toppings",
+      "COLUMN_NAME": "category",
+      "COLUMN_TYPE": "enum('vegetable','meat','cheese')",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "toppings",
+      "COLUMN_NAME": "smallPrice",
+      "COLUMN_TYPE": "decimal(10,2)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "toppings",
+      "COLUMN_NAME": "mediumPrice",
+      "COLUMN_TYPE": "decimal(10,2)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "toppings",
+      "COLUMN_NAME": "largePrice",
+      "COLUMN_TYPE": "decimal(10,2)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "toppings",
+      "COLUMN_NAME": "available",
+      "COLUMN_TYPE": "tinyint(1)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "1"
+    },
+    {
+      "TABLE_NAME": "toppings",
+      "COLUMN_NAME": "sortOrder",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "0"
+    },
+    {
+      "TABLE_NAME": "toppings",
+      "COLUMN_NAME": "createdAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "toppings",
+      "COLUMN_NAME": "updatedAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "id",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "PRI",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "openId",
+      "COLUMN_TYPE": "varchar(64)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "UNI",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "name",
+      "COLUMN_TYPE": "text",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "email",
+      "COLUMN_TYPE": "varchar(320)",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "loginMethod",
+      "COLUMN_TYPE": "varchar(64)",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "role",
+      "COLUMN_TYPE": "enum('user','admin')",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "user"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "createdAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "updatedAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "users",
+      "COLUMN_NAME": "lastSignedIn",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "wingFlavors",
+      "COLUMN_NAME": "id",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "PRI",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "wingFlavors",
+      "COLUMN_NAME": "name",
+      "COLUMN_TYPE": "varchar(100)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "wingFlavors",
+      "COLUMN_NAME": "isGlutenFree",
+      "COLUMN_TYPE": "tinyint(1)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "0"
+    },
+    {
+      "TABLE_NAME": "wingFlavors",
+      "COLUMN_NAME": "sortOrder",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "0"
+    },
+    {
+      "TABLE_NAME": "wingFlavors",
+      "COLUMN_NAME": "createdAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "wingFlavors",
+      "COLUMN_NAME": "updatedAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "wingPrices",
+      "COLUMN_NAME": "id",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "PRI",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "wingPrices",
+      "COLUMN_NAME": "wingId",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "wingPrices",
+      "COLUMN_NAME": "size",
+      "COLUMN_TYPE": "varchar(50)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "wingPrices",
+      "COLUMN_NAME": "price",
+      "COLUMN_TYPE": "decimal(10,2)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "wingPrices",
+      "COLUMN_NAME": "sortOrder",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "0"
+    },
+    {
+      "TABLE_NAME": "wingPrices",
+      "COLUMN_NAME": "createdAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "wingPrices",
+      "COLUMN_NAME": "updatedAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "wings",
+      "COLUMN_NAME": "id",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "PRI",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "wings",
+      "COLUMN_NAME": "name",
+      "COLUMN_TYPE": "varchar(100)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "wings",
+      "COLUMN_NAME": "description",
+      "COLUMN_TYPE": "text",
+      "IS_NULLABLE": "YES",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "wings",
+      "COLUMN_NAME": "type",
+      "COLUMN_TYPE": "varchar(50)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "NULL"
+    },
+    {
+      "TABLE_NAME": "wings",
+      "COLUMN_NAME": "isGlutenFree",
+      "COLUMN_TYPE": "tinyint(1)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "0"
+    },
+    {
+      "TABLE_NAME": "wings",
+      "COLUMN_NAME": "sortOrder",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "0"
+    },
+    {
+      "TABLE_NAME": "wings",
+      "COLUMN_NAME": "createdAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    },
+    {
+      "TABLE_NAME": "wings",
+      "COLUMN_NAME": "updatedAt",
+      "COLUMN_TYPE": "timestamp",
+      "IS_NULLABLE": "NO",
+      "COLUMN_KEY": "",
+      "COLUMN_DEFAULT": "CURRENT_TIMESTAMP"
+    }
+  ],
+  "messages": [],
+  "stdout": "TABLE_NAME\tCOLUMN_NAME\tCOLUMN_TYPE\tIS_NULLABLE\tCOLUMN_KEY\tCOLUMN_DEFAULT\n__drizzle_migrations\tid\tbigint(20) unsigned\tNO\tPRI\tNULL\n__drizzle_migrations\thash\ttext\tNO\t\tNULL\n__drizzle_migrations\tcreated_at\tbigint(20)\tYES\t\tNULL\ncartItemCustomizations\tid\tint(11)\tNO\tPRI\tNULL\ncartItemCustomizations\tcartItemId\tint(11)\tNO\t\tNULL\ncartItemCustomizations\tmodificationType\tenum('add','remove','replace')\tNO\t\tNULL\ncartItemCustomizations\ttoppingId\tint(11)\tNO\t\tNULL\ncartItemCustomizations\treplacedToppingId\tint(11)\tYES\t\tNULL\ncartItemCustomizations\thalfPizza\tenum('whole','left','right')\tNO\t\twhole\ncartItemCustomizations\tadditionalCharge\tdecimal(10,2)\tNO\t\t0.00\ncartItemCustomizations\tcreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\ncartItems\tid\tint(11)\tNO\tPRI\tNULL\ncartItems\tuserId\tint(11)\tNO\tMUL\tNULL\ncartItems\titemType\tvarchar(20)\tNO\t\tpizza\ncartItems\tmenuItemId\tint(11)\tNO\tMUL\tNULL\ncartItems\tsize\tvarchar(50)\tYES\t\tNULL\ncartItems\tquantity\tint(11)\tNO\t\t1\ncartItems\tprice\tdecimal(10,2)\tNO\t\tNULL\ncartItems\tnotes\ttext\tYES\t\tNULL\ncartItems\tcreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\ncartItems\tupdatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\ncartItems\tcustomizations\ttext\tYES\t\tNULL\ncustomerReviews\tid\tint(11)\tNO\tPRI\tNULL\ncustomerReviews\tcustomerName\tvarchar(100)\tNO\t\tNULL\ncustomerReviews\temail\tvarchar(320)\tYES\t\tNULL\ncustomerReviews\trating\tint(11)\tNO\t\tNULL\ncustomerReviews\treviewText\ttext\tNO\t\tNULL\ncustomerReviews\tapproved\ttinyint(1)\tNO\t\t0\ncustomerReviews\tfeatured\ttinyint(1)\tNO\t\t0\ncustomerReviews\tcreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\ncustomerReviews\tapprovedAt\ttimestamp\tYES\t\tNULL\ncustomerReviews\tapprovedBy\tint(11)\tYES\t\tNULL\nmenuItemPrices\tid\tint(11)\tNO\tPRI\tNULL\nmenuItemPrices\tmenuItemId\tint(11)\tNO\tMUL\tNULL\nmenuItemPrices\tsize\tvarchar(50)\tNO\t\tNULL\nmenuItemPrices\tprice\tdecimal(10,2)\tNO\t\tNULL\nmenuItemPrices\tcreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\nmenuItemPrices\tupdatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\nmenuItems\tid\tint(11)\tNO\tPRI\tNULL\nmenuItems\tname\tvarchar(100)\tNO\t\tNULL\nmenuItems\tdescription\ttext\tYES\t\tNULL\nmenuItems\tcategory\tenum('pizza','wings','sides','drinks')\tNO\tMUL\tNULL\nmenuItems\timageUrl\ttext\tYES\t\tNULL\nmenuItems\tavailable\ttinyint(1)\tNO\tMUL\t1\nmenuItems\tsortOrder\tint(11)\tNO\t\t0\nmenuItems\tcreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\nmenuItems\tupdatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\norderItems\tid\tint(11)\tNO\tPRI\tNULL\norderItems\torderId\tint(11)\tNO\tMUL\tNULL\norderItems\tmenuItemId\tint(11)\tNO\tMUL\tNULL\norderItems\tmenuItemName\tvarchar(100)\tNO\t\tNULL\norderItems\tsize\tvarchar(50)\tYES\t\tNULL\norderItems\tquantity\tint(11)\tNO\t\tNULL\norderItems\tprice\tdecimal(10,2)\tNO\t\tNULL\norderItems\tnotes\ttext\tYES\t\tNULL\norderItems\tcreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\norderItems\tcustomizations\ttext\tYES\t\tNULL\norders\tid\tint(11)\tNO\tPRI\tNULL\norders\tuserId\tint(11)\tNO\tMUL\tNULL\norders\tstatus\tenum('pending','preparing','out_for_delivery','completed','cancelled')\tNO\tMUL\tpending\norders\tdeliveryAddress\ttext\tYES\t\tNULL\norders\tphoneNumber\tvarchar(20)\tNO\t\tNULL\norders\torderNotes\ttext\tYES\t\tNULL\norders\tsubtotal\tdecimal(10,2)\tNO\t\tNULL\norders\ttax\tdecimal(10,2)\tNO\t\tNULL\norders\ttotal\tdecimal(10,2)\tNO\t\tNULL\norders\tcreatedAt\ttimestamp\tNO\tMUL\tCURRENT_TIMESTAMP\norders\tupdatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\norders\torderType\tenum('pickup','delivery')\tNO\t\tdelivery\norders\tcustomerName\tvarchar(100)\tYES\t\tNULL\norders\temail\tvarchar(320)\tYES\t\tNULL\norders\tadditionalInfo\ttext\tYES\t\tNULL\norders\tpaymentMethod\tenum('debit','credit_visa','credit_mastercard','cash','etransfer')\tYES\t\tNULL\norders\tscheduledPickupTime\ttimestamp\tYES\t\tNULL\norders\tstatusUpdatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\npizzaToppings\tid\tint(11)\tNO\tPRI\tNULL\npizzaToppings\tmenuItemId\tint(11)\tNO\t\tNULL\npizzaToppings\ttoppingId\tint(11)\tNO\t\tNULL\npizzaToppings\tisDefault\ttinyint(1)\tNO\t\t1\npizzaToppings\tcreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\ntoppings\tid\tint(11)\tNO\tPRI\tNULL\ntoppings\tname\tvarchar(100)\tNO\t\tNULL\ntoppings\tcategory\tenum('vegetable','meat','cheese')\tNO\t\tNULL\ntoppings\tsmallPrice\tdecimal(10,2)\tNO\t\tNULL\ntoppings\tmediumPrice\tdecimal(10,2)\tNO\t\tNULL\ntoppings\tlargePrice\tdecimal(10,2)\tNO\t\tNULL\ntoppings\tavailable\ttinyint(1)\tNO\t\t1\ntoppings\tsortOrder\tint(11)\tNO\t\t0\ntoppings\tcreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\ntoppings\tupdatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\nusers\tid\tint(11)\tNO\tPRI\tNULL\nusers\topenId\tvarchar(64)\tNO\tUNI\tNULL\nusers\tname\ttext\tYES\t\tNULL\nusers\temail\tvarchar(320)\tYES\t\tNULL\nusers\tloginMethod\tvarchar(64)\tYES\t\tNULL\nusers\trole\tenum('user','admin')\tNO\t\tuser\nusers\tcreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\nusers\tupdatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\nusers\tlastSignedIn\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\nwingFlavors\tid\tint(11)\tNO\tPRI\tNULL\nwingFlavors\tname\tvarchar(100)\tNO\t\tNULL\nwingFlavors\tisGlutenFree\ttinyint(1)\tNO\t\t0\nwingFlavors\tsortOrder\tint(11)\tNO\t\t0\nwingFlavors\tcreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\nwingFlavors\tupdatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\nwingPrices\tid\tint(11)\tNO\tPRI\tNULL\nwingPrices\twingId\tint(11)\tNO\t\tNULL\nwingPrices\tsize\tvarchar(50)\tNO\t\tNULL\nwingPrices\tprice\tdecimal(10,2)\tNO\t\tNULL\nwingPrices\tsortOrder\tint(11)\tNO\t\t0\nwingPrices\tcreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\nwingPrices\tupdatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\nwings\tid\tint(11)\tNO\tPRI\tNULL\nwings\tname\tvarchar(100)\tNO\t\tNULL\nwings\tdescription\ttext\tYES\t\tNULL\nwings\ttype\tvarchar(50)\tNO\t\tNULL\nwings\tisGlutenFree\ttinyint(1)\tNO\t\t0\nwings\tsortOrder\tint(11)\tNO\t\t0\nwings\tcreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\nwings\tupdatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\n",
+  "stderr": "",
+  "execution_time_ms": 118
+}

@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO `wings` (`name`, `description`, `type`, `isGlutenFree`) VALUES\n('Bone-In Wings', 'Traditional chicken wings with bone', 'bone-in', FALSE),\n('Boneless Wings', 'Breaded chicken bites', 'boneless', FALSE);\n\nINSERT INTO `wingFlavors` (`name`, `isGlutenFree`, `sortOrder`) VALUES\n('BBQ', FALSE, 1),\n('Cajun', FALSE, 2),\n('Honey Garlic', FALSE, 3),\n('Honey Hot', FALSE, 4),\n('Honey Mustard', FALSE, 5),\n('Hot', FALSE, 6),\n('Lemon Pepper', FALSE, 7),\n('Parmesan Garlic', FALSE, 8),\n('Salt & Pepper', FALSE, 9),\n('Suicide', FALSE, 10),\n('Sweet Chili Thai', FALSE, 11),\n('Teriyaki', FALSE, 12);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3sMjW2Cb55bMNhN.ceec5d85dae0 --database D8hwM9LPzYVV8vtRDKX9uk --execute INSERT INTO `wings` (`name`, `description`, `type`, `isGlutenFree`) VALUES\n('Bone-In Wings', 'Traditional chicken wings with bone', 'bone-in', FALSE),\n('Boneless Wings', 'Breaded chicken bites', 'boneless', FALSE);\n\nINSERT INTO `wingFlavors` (`name`, `isGlutenFree`, `sortOrder`) VALUES\n('BBQ', FALSE, 1),\n('Cajun', FALSE, 2),\n('Honey Garlic', FALSE, 3),\n('Honey Hot', FALSE, 4),\n('Honey Mustard', FALSE, 5),\n('Hot', FALSE, 6),\n('Lemon Pepper', FALSE, 7),\n('Parmesan Garlic', FALSE, 8),\n('Salt & Pepper', FALSE, 9),\n('Suicide', FALSE, 10),\n('Sweet Chili Thai', FALSE, 11),\n('Teriyaki', FALSE, 12);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 64
+}
