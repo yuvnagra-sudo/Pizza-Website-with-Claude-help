@@ -59,7 +59,7 @@
       "medium": 17.99,
       "large": 21.99,
       "allergens": "",
-      "vegetarian": false,
+      "vegetarian": true,
       "spicy": false,
       "best_seller": false,
       "sweet": false,
@@ -356,6 +356,7 @@
       }
     ],
     "flavours": [
+      "Plain",
       "Hot",
       "Extra Hot",
       "Super Hot",
@@ -373,19 +374,19 @@
         {
           "name": "Caesar Salad",
           "price": 8.99,
-          "description": "Crunchy Romaine Lettuce & Croutons. Caesar dressing on the side."
+          "description": "Romaine Lettuce & Croutons. Caesar dressing on the side."
         },
         {
           "name": "Chicken Caesar Salad",
           "price": 10.99,
-          "description": "Crunchy Romaine Lettuce, Tender Chicken, & Croutons. Caesar dressing on the side."
+          "description": "Romaine Lettuce, Tender Chicken, & Croutons. Caesar dressing on the side."
         }
       ],
       "appetizers": [
         {
           "name": "Chicken Fillets",
           "price": 7.99,
-          "description": "Crispy breaded chicken fillets"
+          "description": "Crispy breaded chicken fillets. Includes one Honey Garlic dip"
         },
         {
           "name": "Bread Sticks",
@@ -475,7 +476,7 @@
       "medium": 17.99,
       "large": null,
       "allergens": "",
-      "vegetarian": false,
+      "vegetarian": true,
       "spicy": false,
       "best_seller": false
     },
@@ -519,7 +520,7 @@
       "medium": 21.99,
       "large": null,
       "allergens": "",
-      "vegetarian": false,
+      "vegetarian": true,
       "spicy": false,
       "best_seller": false
     },
