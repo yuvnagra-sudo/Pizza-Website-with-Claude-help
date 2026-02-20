@@ -1,0 +1,1 @@
+ALTER TABLE `cartItems` MODIFY COLUMN `itemType` enum('pizza','wings','sides','drinks','dips') NOT NULL DEFAULT 'pizza';

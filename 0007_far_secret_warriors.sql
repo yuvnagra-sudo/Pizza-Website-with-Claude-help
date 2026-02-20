@@ -1,0 +1,1 @@
+ALTER TABLE `orders` ADD `statusUpdatedAt` timestamp DEFAULT (now()) NOT NULL;

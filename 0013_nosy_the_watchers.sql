@@ -1,0 +1,1 @@
+ALTER TABLE `cartItems` ADD `itemType` enum('pizza','wings') DEFAULT 'pizza' NOT NULL;
